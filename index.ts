@@ -105,7 +105,8 @@ async function peticion(user:Usuario){
           status:false,
           message:error.message,
           error:true,
-          errorData:error
+          errorData:error,
+          dataSend:user
         }
         return respons;
       })
