@@ -1,10 +1,10 @@
 import axios from 'axios'
 
 
-// let host="https://apprende-ws.herokuapp.com/graphql"
-let host="http://localhost:3000/graphql"
+let host="https://apprende-ws.herokuapp.com/graphql"
+// let host="http://localhost:3000/graphql"
 let values=[null,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined,"Daniel","David ",3];
-let numPeticiones=10;
+let numPeticiones=100;
 
 let query=`query($user: UserInput){
     getUser(user: $user) {
